@@ -1,0 +1,13 @@
+.navbar{
+    width: 590px;
+    height: 60px;
+    margin: auto;
+    margin-top: 2px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #e2e8f0;
+    line-height: 2px;
+    font-weight: bold;
+}
+
