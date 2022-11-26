@@ -6,13 +6,13 @@ function Navbar() {
   return (
     <div className={styles.navbar}>
         <Link to='/showpasword'>
-            <Button colorScheme='teal'>Show Password</Button>
+            <Button colorScheme='teal' size='xs'>Show Password</Button>
         </Link>
         <Link to='/addpasword'>
-            <Button colorScheme='teal'>Eray butonu</Button>
+            <Button colorScheme='teal' size='xs'>Add Password</Button>
         </Link>
         <Link to='/generate'>
-            <Button colorScheme='teal'>Generate Password</Button>
+            <Button colorScheme='teal' size='xs'>Generate Password</Button>
         </Link>
     </div>
   )

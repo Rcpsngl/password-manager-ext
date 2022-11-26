@@ -26,22 +26,22 @@ function Card_() {
   variant='outline'
 >
   <Box>
-    <Text py='2' maxW={{ base: '100%', sm: '200px' }} mt='5'>
+    <Text py='2' maxW={{ base: '100%', sm: '100px' }} mt='5'>
       www.youtube.com
     </Text>
   </Box>
 
   <Stack>
-    <CardBody w='350px'>
+    <CardBody w='250px'>
     <Grid templateColumns='repeat(1, 1fr)' gap={2}>
-        <Input placeholder='id' size='sm' />
-        <Input placeholder='password' size='sm' />
+        <Input placeholder='id' size='xs' />
+        <Input placeholder='password' size='xs' />
       </Grid>
     </CardBody>
 
     <CardFooter >
-      <Button colorScheme='blue' mt='-2'>Update</Button>
-      <Button colorScheme='red' mt='-2' ml='2'>Delete</Button>
+      <Button colorScheme='blue' mt='-2' size='sm'>Update</Button>
+      <Button colorScheme='red' mt='-2' ml='2' size='sm'>Delete</Button>
     </CardFooter>
   </Stack>
 </Card>
