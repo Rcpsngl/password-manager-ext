@@ -6,7 +6,7 @@ import {Box, Input , Button,  Grid, Accordion,
   import { Card, CardBody, CardFooter , Stack, Text,} from '@chakra-ui/react'
 
 
-function Card_() {
+function Card_({item}) {
   return (
 <>
 <Accordion defaultIndex={[1]} allowMultiple> 
@@ -14,7 +14,7 @@ function Card_() {
     <h2>
       <AccordionButton>
         <Box flex='1' textAlign='left'>
-          Section 1 title
+          {item.title}
         </Box>
         <AccordionIcon />
       </AccordionButton>
@@ -34,8 +34,8 @@ function Card_() {
   <Stack>
     <CardBody w='250px'>
     <Grid templateColumns='repeat(1, 1fr)' gap={2}>
-        <Input placeholder='id' size='xs' />
-        <Input placeholder='password' size='xs' />
+        <Input placeholder='id' size='xs' value={item.id} />
+        <Input placeholder='password' size='xs' value={item.password}/>
       </Grid>
     </CardBody>
 
